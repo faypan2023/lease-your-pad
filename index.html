@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lease your pad!</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+    <!-- google "font awesome cdn", copy the link here -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <!-- head section -->
+
+    <header>
+        <h1>LEASE YOUR PAD</h1>
+        <h3 class="tagline">Turn your home, trailer, tent or igloo into some fast cash! When you're not there let someone else be.</h3>
+    </header>
+    <main>
+        <!-- main hero section -->
+        <article class="hero">
+            <div>
+                <h2>Stay here</h2>
+                <img src="images/home.jpg" alt="home">
+            </div>
+            <h3>The premise is simple, you have extra space - we connect you with someone who wants to stay there.</h3>
+        </article>
+
+        <!-- main currentListings section -->
+        <h2>Current Listings</h2>
+        <article class="currentListings">
+            <figure>
+                <img src="images/vw.jpg" alt="vwBus">
+                <figcaption><img src="images/iconTrailer.svg" alt="iconTrailer">VW Bus</figcaption>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<a href="#">more></a></p>
+            </figure>
+            <figure>
+                <img src="images/airstream.jpg" alt="airstream">
+                <figcaption><img src="images/iconTrailer.svg" alt="iconTrailer">Airstream</figcaption>
+                <p>Alias eligendi eum ratione ipsam, quia sequi unde!<a href="#">more></a></p>
+            </figure>
+            <figure>
+                <img src="images/home3.jpg" alt="house">
+                <figcaption><img src="images/iconHome.svg" alt="iconHome">House</figcaption>
+                <p>Sapiente natus ut rem similique eum dolorem magnam.<a href="#">more></a></p>
+            </figure>
+            <figure>
+                <img src="images/teepee.jpg" alt="teepee">
+                <figcaption><img src="images/iconTeepee.svg" alt="iconTeepee">Teepees</figcaption>
+                <p>Ipsam quam doloremque asperiores, totam accusantium, alias inventore.<a href="#">more></a></p>
+            </figure>
+            <figure>
+                <img src="images/treehouse.jpg" alt="treehouse">
+                <figcaption><img src="images/iconHome.svg" alt="iconHome">Treehouse</figcaption>
+                <p>Animi soluta, omnis maiores sequi dolore optio laboriosam?<a href="#">more></a></p>
+            </figure>
+            <figure>
+                <img src="images/home2.jpg" alt="jungleHouse">
+                <figcaption><img src="images/iconHome.svg" alt="iconHome">Jungle House</figcaption>
+                <p>Soluta enim, molestiae? Maxime ullam, ipsam eos mollitia?<a href="#">more></a></p>
+            </figure>
+        </article>
+
+        <!-- main form section -->
+
+        <h2>Need more information?</h2>
+        <h3 class="cta">Thanks for stopping by, if you have questions, please get in touch with us:</h3>
+
+        <article class="formSection">
+            <form action="mailto:1206167451@qq.com" method="post" id="Form">
+
+
+                <!-- basics fieldset -->
+                <fieldset class="basicsFieldset">
+                    <legend>THE BASICS</legend>
+                    <ul class="basics">
+                        <li>
+                            <label for="name">Your name:</label>
+                            <input type="text" id="name" name="name" value="" required>
+                        </li>
+                        <li>
+                            <label for="email">Your email:</label>
+                            <input type="email" id="email" name="email" value="" required>
+                        </li>
+                        <li>
+                            <label for="phone">Your telephone number:</label>
+                            <input type="tel" id="phone" name="phone" value="" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Hint: Please use the format 999-999-9999">
+                        </li>
+                        <!-- text area -->
+                        <li>
+                            <label for="message">Your question or message:</label>
+                            <textarea name="message" id="message"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+
+
+                <!-- ready to rent fieldset -->
+                <fieldset>
+                    <legend>READY TO RENT:</legend>
+                    <h3 class="quote">Let us know a little bit about your pad.</h3>
+                    <!--  location section -->
+                    <section>
+                        <h4>Location:</h4>
+                        <section class="location">
+                            <div class="address">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                            <section class="city-state-zip">
+                                <div class="city">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" id="city" required>
+                                </div>
+                                <div class="state">
+                                    <label for="state">state</label>
+                                    <input type="text" name="state" id="state" required maxlength="2">
+                                </div>
+                                <div class="zip">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" name="zip" id="zip" required maxlength="5" pattern="\d{5}([\-]\d{4})?">
+                                </div>
+                            </section>
+                        </section>
+
+                    </section>
+                    <!-- pad like section: checkbox-->
+                    <section>
+                        <h4>What is your pad like?</h4>
+                        <label for="padType" class="padType">Pad type</label>
+                        <ul class="checkbox" id="padType">
+                            <li><input type="checkbox" name="padType" value="home" id="home">Home</li>
+                            <li><input type="checkbox" name="padType" value="igloo" id="igloo">Igloo</li>
+                            <li> <input type="checkbox" name="padType" value="treehouse" id="treehouse">Treehouse</li>
+                            <li> <input type="checkbox" name="padType" value="teepee" id="teepee">Teepee</li>
+                            <li> <input type="checkbox" name="padType" value="trailer" id="trailer">Trailer</li>
+                            <li><input type="checkbox" name="padType" value="other" id="other">Other</li>
+                            <li> <input type="checkbox" name="padType" value="van" id="van">Van</li>
+                        </ul>
+                    </section>
+
+                    <div class="details">
+                        <!-- room section: select drop menu -->
+                        <section>
+                            <ul class="dropMenu">
+                                <li>
+                                    <label for="roomType">Room Type</label>
+                                    <select id="roomType" name="roomType" class="formControl">
+                                        <option value="Select_roomType">Entire home/apt</option>
+                                        <option value="singleRoom">single room</option>
+                                        <option value="doubleRoom">double room</option>
+                                        <option value="tripleRoom">triple room</option>
+                                        <option value="quadRoom">quad room</option>
+                                        <option value="familyRoom">family room</option>
+                                        <option value="adjoiningRoom">adjoining room</option>
+                                        <option value="connectingRoom">connecting room</option>
+                                        <option value="studio">studio</option>
+                                        <option value="deluxeRoom">deluxe room</option>
+                                    </select>
+                                    <i class="fa-solid fa-sort"></i>
+                                </li>
+                                <li>
+                                    <label for="bedrooms">Bedrooms</label>
+                                    <select id="bedrooms" name="bedrooms" class="formControl">
+                                        <option value="Select_bedrooms">1 bedroom</option>
+                                        <option value="2bedrooms">2 bedrooms</option>
+                                        <option value="3bedrooms">3 bedrooms</option>
+                                        <option value="4bedrooms">4 bedrooms</option>
+                                        <option value="5bedrooms">5 bedrooms</option>
+                                        <option value="more">more than 5 bedrooms</option>
+                                    </select>
+                                    <i class="fa-solid fa-sort"></i>
+                                </li>
+                                <li>
+                                    <label for="bathrooms">Bathrooms</label>
+                                    <select id="bathrooms" name="bathrooms" class="formControl">
+                                        <option value="Select_bathrooms">1 bathroom</option>
+                                        <option value="2bathrooms">2 bathrooms</option>
+                                        <option value="3bathrooms">3 bathrooms</option>
+                                        <option value="4bathrooms">4 bathrooms</option>
+                                        <option value="more">more than 4 bathrooms</option>
+                                    </select>
+                                    <i class="fa-solid fa-sort"></i>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- amenities section: radio button -->
+                        <section>
+                            <label for="otherAmenities" class="otherAmenities">Other amenities</label>
+                            <ul class="checkbox">
+                                <li><input type="radio" name="otherAmenities" value="pool" id="pool">Pool</li>
+                                <li><input type="radio" name="otherAmenities" value="bikes" id="bikes">Bikes</li>
+                                <li><input type="radio" name="otherAmenities" value="tennisCourts" id="tennisCourts">Tennis courts</li>
+                                <li> <input type="radio" name="otherAmenities" value="kidsToys" id="kidsToys">Kids Toys</li>
+                                <li><input type="radio" name="otherAmenities" value="walkingTrails" id="walkingTrails">Walking trails</li>
+                                <li><input type="radio" name="otherAmenities" value="pet" id="pet">Pet friendly</li>
+                                <li><input type="radio" name="otherAmenities" value="hiking" id="hiking">Hiking</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                </fieldset>
+
+            </form>
+            <input type="submit" id="submit" value="Sign me up!">
+        </article>
+    </main>
+    <footer>
+        <p>copyright 2020 all rights reserved</p>
+    </footer>
+</body>
+
+</html>

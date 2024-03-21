@@ -1,0 +1,475 @@
+/*basic style #98D7CB;#379F9F;#3f3f3f;dimgrey;#999;#333;*/
+html {
+    font-size: 10px;
+    font-family: verdana, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    padding: 30px 20px 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: dimgrey;
+    margin: 15px auto 15px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: solid 3px #98D7CB;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: dimgrey;
+    font-weight: normal;
+    text-align: center;
+    padding: 2px 30px 10px;
+    line-height: 1.3;
+}
+
+h4 {
+    color: #379F9F;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: solid 1px #379F9F;
+    padding: 15px 2px 2px;
+    margin: 0 1rem 1rem;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3f3f3f;
+    display: flex;
+    /*align the icon and figcapiton*/
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1rem;
+    color: #999;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+/*header section*/
+header {
+    background-color: #98D7CB;
+    border-bottom: solid 12px #379F9F;
+    text-align: center;
+}
+
+.tagline {
+    font-style: italic;
+    margin-top: 0;
+    padding: 0 25px 20px;
+}
+
+/*main--hero section*/
+main {
+    width: 90%;
+    /*add 10% space on the side*/
+    max-width: 1100px;
+    margin: auto;
+    /*horizontally centered*/
+}
+
+.hero h2 {
+    border-top: none;
+}
+
+.hero img {
+    display: block;
+    margin: auto auto 25px;
+    /*set the image to be block elements and margin auto, the image will horizontally centered.*/
+}
+
+/*main--current listings section*/
+.currentListings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* justify-content:center;
+    align-items:center; */
+}
+
+figcaption img {
+    width: 2rem;
+}
+
+a {
+    color: #98D7CB;
+}
+
+/*main--form section*/
+/* basics fieldset */
+.cta {
+    padding: 0 15px 25px;
+}
+
+fieldset {
+    border: dashed 1px #98D7CB;
+    margin: 1rem 0;
+    padding: 2em 1em 2.5em;
+    /* margin:0 1rem 1rem; */
+}
+
+legend {
+    color: #379F9F;
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+
+label {
+    /* width: 50rem; */
+    font-size: 1.2rem;
+    color: #999;
+    display: block;
+    margin: 0 1rem 1rem;
+}
+
+.basics input,
+.location input {
+    /*the basics and location input box style*/
+    width: 95%;
+    height: 30px;
+    margin: 0 1rem 1rem;
+    /*the same with lable margin*/
+    border-radius: 4px;
+    border: solid 1px #999;
+}
+
+textarea {
+    width: 95%;
+    height: 150px;
+    margin: 0 1em 1rem;
+    border-radius: 4px;
+    border: solid 1px #999;
+}
+
+/* ready to rent fieldset */
+.quote {
+    padding: 0 5px 5px;
+    text-align: left;
+}
+
+/*location input*/
+fieldset {
+    min-width: 300px;
+}
+
+/*after add the .city-state-zip:dispaly:flex, the fieldset become very wide, add the min-width to control the width */
+.location {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap:wrap;  */
+}
+
+.city-state-zip {
+    display: flex;
+}
+
+.zip {
+    flex: 18%;
+}
+
+.state {
+    flex: 12%;
+}
+
+.city {
+    flex: 40%;
+}
+
+.city-state-zip input[type="text"] {
+    width: 90%;
+}
+
+.location label {
+    width: 5rem;
+    /* border:solid 1px red; */
+}
+
+/* .location {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+ }
+ .address {
+    grid-column: 1/-1;
+ }
+ .city {
+    display: flex;
+ }  */
+
+/* .city{
+    display:grid;
+    grid-template-columns:40% 20% 30%;
+   grid-template-columns:235px 90px 150px; 
+    grid-template-columns:2fr 1fr 1.5fr;
+    gap:5px;
+    
+} */
+
+/*pad like checkbox and amenities radio button style is the same*/
+.padType,
+.dropMenu label,
+.otherAmenities {
+    font-weight: bold;
+    color: dimgrey;
+}
+
+.checkbox {
+    color: #999;
+    /*label text color*/
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin: 0 1rem 1rem;
+}
+
+.checkbox li {
+    /*align the checkbox icon and label text*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+/*custom checkbox and radio box icon style*/
+.checkbox li input[type="checkbox"],
+.checkbox li input[type="radio"] {
+    /*target the type attribute*/
+    width: 20px;
+    height: 20px;
+    /*make the icon bigger than default size*/
+    margin-right: 10px;
+    /*add some space between the icon and label text*/
+    accent-color: #379f9f;
+    /*change the color of checked state input box*/
+}
+
+/*room type drop menu*/
+.formControl {
+    /*all the drop menu input box style, first add "formControl" class for the select element*/
+    height: 30px;
+    width: 95%;
+    margin: 0 1rem 1rem;
+    border-radius: 4px;
+    border: solid 1px #999;
+    /*the input box height, width,border style, are the same with the basics and location*/
+    font-size: 1.2rem;
+    padding: 5px;
+    color: #999;
+    /*text font-size, padding, text color*/
+    display: block;
+}
+
+/*custom arrow icon*/
+.formControl {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* remove the default arrow icons */
+}
+
+.dropMenu li {
+    /*should targer "li"*/
+    position: relative;
+    /* border:solid 1px blue; */
+}
+
+.formControl + .fa-sort {
+    position: absolute;
+    /*input box and custom icon positon*/
+    right: 30px;
+    bottom: .15em;
+    /*icon position*/
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #999;
+    font-size: 1.2em;
+    /*icon color and size*/
+    pointer-events: none;
+}
+
+/*end custom arrow icon*/
+
+
+#submit {
+    display: block;
+    font-size: 2rem;
+    height: 35px;
+    width: 95%;
+    margin: auto;
+    /*set the button to be block element and margin auto, it will horizontally centered.*/
+    padding: 6px;
+    background-color: #379F9F;
+    color: #fff;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+/*footer section*/
+footer {
+    background-color: #98D7CB;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/*media queries*/
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 4rem;
+        padding: 40px 25px 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding-top: 20px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    figcaption {
+        font-size: 1.5rem;
+    }
+
+    legend {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    .checkbox li {
+        font-size: 1.5rem;
+    }
+
+    .formControl {
+        font-size: 1.5rem;
+    }
+    .currentListings {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    main > * {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    h2 {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .currentListings {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
+
+    .cta {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    #Form {
+        display: flex;
+        gap: 2rem;
+    }
+
+    fieldset {
+        min-width: 300px;
+    }
+
+    /*  #Form{
+        display:grid;
+        grid-template-columns:1fr 2fr;
+        gap:2rem;
+         }  
+        */
+    .basics input {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .location {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 2rem;
+    }
+
+    .address {
+        flex: 50%;
+    }
+
+    .zip {
+        flex: 15%;
+    }
+
+    .state {
+        flex: 8%;
+    }
+
+    .city {
+        flex: 20%;
+    }
+
+    #padType {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .details {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 2rem;
+    }
+
+    .formControl + .fa-sort {
+        right: 15px;
+        bottom: .12em;
+        /*icon position*/
+    }
+
+    #submit {
+        width: 30%;
+        margin-left: 5px;
+        /*set the button to be block element and margin auto, it will horizontally centered.*/
+    }
+
+}
